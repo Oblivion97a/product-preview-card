@@ -114,23 +114,21 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: 0.75rem; /* This creates space between the icon and text */
   font-weight: 700;
   font-size: 0.8rem;
   cursor: pointer;
   border: 0;
   background-color: hsl(158, 36%, 37%);
   color: white;
-  height: 2.5rem;
+  height: 3rem; /* A slightly taller button looks better */
+  padding-inline: 1.5rem; /* Add horizontal padding */
   border-radius: 0.5rem;
+  width: 100%; /* Make it take the full width of the container */
 }
 
 .button:hover, .button:focus {
   background-color: hsl(158, 42%, 18%);
-}
-
-.button-text::before {
-  content: url("../images/icon-cart.svg");
-  margin-right: 0.5rem;
 }
 
 .attribution {

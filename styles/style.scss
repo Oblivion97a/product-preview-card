@@ -134,14 +134,17 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    gap: 0.75rem; /* This creates space between the icon and text */
     font-weight: $fw-bold;
     font-size: 0.80rem;
     cursor: pointer;
     border: 0;
     background-color: $main-color;
     color: white;
-    height: 2.5rem;
+    height: 3rem; /* A slightly taller button looks better */
+    padding-inline: 1.5rem; /* Add horizontal padding */
     border-radius: 0.50rem;
+    width: 100%; /* Make it take the full width of the container */
 }
 
 .button:hover, .button:focus{
@@ -149,10 +152,6 @@ body {
 }
 
 
-.button-text::before {
-    content: url("../images/icon-cart.svg");
-    margin-right: 0.50rem;
-}
 
 
 
