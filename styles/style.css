@@ -59,6 +59,7 @@ body {
   border-radius: 1rem;
   display: grid;
   place-content: center;
+  max-width: 600px
 }
 .card__image img {
   border-radius: 1rem 1rem 0 0;
