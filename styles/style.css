@@ -1,0 +1,138 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+body {
+  font-size: 0.875rem;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", "sans-serif";
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  margin-inline: 1rem;
+  margin-block: 7rem;
+  border-radius: 1rem;
+  display: grid;
+  place-content: center;
+}
+.card__image img {
+  border-radius: 1rem 1rem 0 0;
+}
+@media (min-width: 600px) {
+  .card__image img {
+    border-radius: 1rem 0 0 1rem;
+  }
+}
+.card__content {
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.9rem;
+}
+.card__category {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.card__title {
+  font-family: "Fraunces", "serif";
+  font-size: 1.75rem;
+  line-height: 1.1;
+  color: black;
+}
+
+@media (min-width: 600px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.price-tag {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.price-tag .new-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", "serif";
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.price-tag .old-price {
+  text-decoration: line-through;
+  align-self: center;
+  font-size: 0.8rem;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: 0;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.button:hover, .button:focus {
+  background-color: hsl(158, 42%, 18%);
+}
+
+.button-text::before {
+  content: url("../images/icon-cart.svg");
+  margin-right: 0.5rem;
+}
+
+.attribution {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
